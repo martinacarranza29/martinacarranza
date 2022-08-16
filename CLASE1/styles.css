@@ -1,0 +1,55 @@
+/*a la etiqueta div le pongo un padding de 20*/ 
+/*padding: hace espaciados internos entre un elemtno y el otro*/
+
+body{
+    margin: 0px;
+}
+div{
+    padding: 20px;
+}
+
+#main{
+    background-color: bisque;
+}
+
+ nav{
+    background-color: rgba(141, 241, 137, 0.836);
+    display: flex; /*hizo que los puntitos se vayan al costado*/
+    flex-direction: row;
+ }
+
+ /*flex te lo transforma hacia al costado, llenar espacios*/
+
+ nav ul{
+    display: flex;
+ }
+
+ nav li{
+    margin-left: 20px;
+    list-style: none; /*para sacar el punto que tenia uso esto*/
+ }
+
+ nav a {
+    text-decoration: none;      /*para sacar las lineas abajo de inicio, sobrenos y contacto*/
+    color: black;             /*para ponerle color a los links*/
+    
+ }
+
+ nav img{
+    display: flex;
+    max-height: 50px;   /*para achicar el ancho del logo*/
+    width: auto;            
+ }
+
+ .menuButton{
+    display: flex;
+    /*align-items: center;*/
+    /*background-color: rgb(223, 170, 183);  si quiero que la cajita de inicio y eso este en rosa*/
+    justify-content: flex-end;
+    width: 100%; /*agranda el tamaño de la caja superior añ 100%*/
+ }
+
+nav a:hover{color: brown} /*para que cuando toco incio, sobrenos aparezca en marron*/
+ 
+
+
