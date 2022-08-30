@@ -1,38 +1,49 @@
+/**{
+   text-decoration: none;
+   color: black;
+}*/
 
 body{
     margin: 0px;
-    background-color: aliceblue; /*cambia el color de toda la página*/
+    background-color: white; /*cambia el color de toda la página*/
     background-image: image();
     margin-left: 20%;
     margin-right: 20%;
-    border: 2px dotted black; /*le da un borde a la pagina, los 2px le da el grosor o agranda el borde, si le pongo 0 se lo saca*/
-    padding: 10px 10px 1opx 10px; /*espacio que hay entre el borde y el contenido*/
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*cambias la letra del texto*/
+    /*border: 2px dotted black;*/ /*le da un borde a la pagina, los 2px le da el grosor o agranda el borde, si le pongo 0 se lo saca*/
+    padding: 10px 10px 10px 10px; /*espacio que hay entre el borde y el contenido*/
+    font-family: Georgia, 'Times New Roman', Times, serif
  }
-
+#quienes_somos{
+   text-decoration: none;
+   color: black;
+}
 
 div{
     padding: 20px;
 }
 
 #main{
-    background-color:  rgb(235, 213, 232);
+    background-color:  white
 }
 
 #Formulario{
-   background-color:  rgb(235, 213, 232);
+   background-color:  white
 }
 
  nav{
-    background-color: rgb(235, 213, 232);
+    background-color:rgb(235, 213, 232);
     display: flex; /*hizo que los puntitos se vayan al costado*/
     flex-direction: row;
- }
+    height: 130px;
+    text-decoration: none;
 
- /*flex te lo transforma hacia al costado, llenar espacios*/
+ }
+/* como en index.html hay solo un nav, no le tengo que poner ninguna referencia */
+/* mediante flex transformamos la botonera, estaba abajo de la imagen y ahora al costado */
+/*flex te lo transforma hacia al costado, llenar espacios*/
 
  nav ul{
-    display: flex;
+    display: flex /*esto le saca el punto a inicio, sobre nos y contacto*/
  }
 
  nav li{
@@ -42,25 +53,34 @@ div{
 
  nav a {
     text-decoration: none;      /*para sacar las lineas abajo de inicio, sobrenos y contacto*/
-    color: black;             /*para ponerle color a los links*/
+    color: black             /*para ponerle color a los links*/
     
  }
 
+ nav a:hover{
+   color: rgb(248, 248, 248);
+   background-color: rgb(236, 198, 223)
+}
+
+
  nav img{
     display: flex;
-    max-height: 170px;   /*para achicar el ancho del logo*/
+    max-height: 130px;   /*para achicar el ancho del logo*/
     width: auto;            
  }
+/* esto es para que la imagen tenga un tamaño de 50vw, que es el 50% del ancho de la pantalla */
+/* hay que agregarle display flex pq esta adentro del nav */
 
  .menuButton{
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
     /*background-color: rgb(223, 170, 183);  si quiero que la cajita de inicio y eso este en rosa*/
     justify-content: flex-end;
     width: 100%; /*agranda el tamaño de la caja superior añ 100%*/
+    padding: 20px
  }
 
-nav a:hover{color: brown} /*para que cuando toco incio, sobrenos aparezca en marron*/
+nav a:hover{color: rgb(161, 55, 55)} /*para que cuando toco incio, sobrenos aparezca en marron*/
 
 
 

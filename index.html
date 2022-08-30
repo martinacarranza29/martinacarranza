@@ -1,101 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mi pagina web</title>
+    <link rel="stylesheet" href="./styles.css"> <!--esto sirve para leer una hoja de estilo-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!--Aca pegue Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  </head>
+
+  <nav class="menu">
+    <img src = "./assets/img/attachment_128931525.jpg" alt="logo">
+    
+    <div class="menuButton">
+      <ul>
+        <li><a href="#el_lugar"><button type="button" class="btn btn-light">El lugar</button></a></li>
+        <li><a href="#nosotros"><button type="button" class="btn btn-light">Sobre nosotros</button></a></li>
+        <li><a href="#servicios"><button type="button" class="btn btn-light">Servicios</button></a></li>
+        <li><a href="#contacto"><button type="button" class="btn btn-light">Contacto</button></a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+
+  <section id="fotos">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/foto1.jpg" class="d-block w-100" alt="..." >
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/foto2.jpeg" class="d-block w-100" alt="..." >
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/foto3.jpeg" class="d-block w-100" alt="..." >
+        </div>
+     <div class="carousel-item">
+        <img src="./assets/img/foto4.jpg" class="d-block w-100" alt="..." >
+      </div>
+    </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </section>
     <body>
-        <nav class="menu">
-          <img src = "/assets/img/logo insta.webp" alt="logo">
-          <div class="menuButton">
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Sobre nosotros</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Contacto</a></li>
-            </ul>
-          </nav>
-        </div>  
-    
-        <section id="main">
-            <div>
-                <h1>Quienes somos</h1>
-                    Somos un equipo de profesionales especializados en la organización de eventos exclusivos. <br>
-                    Además, y sobre todas las cosas, somos artífices de grandes sueños, un grupo humano que entiende que vale la pena <br>
-                    celebrar la vida y ofrece un escenario para que todos los anhelos se conviertan en realidad. <br>
-                    Desde 2009 hasta la actualidad hemos hecho posible más de 800 experiencias únicas que perdurarán para siempre en la memoria <br>
-                     de quienes nos elijen. Evolucionamos en nuestras propuestas y servicios, siempre desde un espacio privilegiado tanto para reuniones sociales <br>
-                     como corporativas.
-    
-                <h1>Viví tu experiencia</h1>
-                ¿Cuál es nuestro mayor orgullo? Sabernos elegidos una y otra vez. <br>
-                Ver a nuestros clientes felices, leerlos y entender que hicimos posible aquel momento inolvidable que durará para siempre.
+      
+   
+        <section id="el_lugar" class="container"> <!--container hace un tab-->
+          <div id="el_lugar">
+            <h1>El lugar</h1>
+            <hr style="color: black">
+            <p>
+              Contamos con un terreno de 9.103 m2 en un óptimo y seguro acceso: Colectora Panamericana Ramal Pilar km 53, Pilar, Buenos Aires. Sobre este predio contamos con tres magníficos ambientes: una amplia Recepción, un Deck integrado a un gran espacio verde con espejos de agua, cascadas, fuentes y piscina, y un espectacular Salón Principal. Todos los espacios están perfectamente diseñados para lograr que cada evento fluya naturalmente.
+            </p>
+          </div>
+        </section>
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <img src="./assets/img/lugar.jpeg">
+            </div>
+            <div class="col">
+              <img src="./assets/img/lugar2.png">
+            </div>
+          </div>
+        </div>
+
+        
+
+        <section id="Quienes_somos" class="container"> <!--container hace un tab-->
+          <div id="nosotros">
+            <h1>Sobre Nosotros</h1>
+            <hr style="color: black">
+            <h3>Quienes somos</h3>
+            <p>
+              Somos un equipo de profesionales especializados en la organización de eventos exclusivos.
+              Además, y sobre todas las cosas, somos artífices de grandes sueños, un grupo humano que entiende que vale la pena
+              celebrar la vida y ofrece un escenario para que todos los anhelos se conviertan en realidad.
+              Desde 2009 hasta la actualidad hemos hecho posible más de 800 experiencias únicas que perdurarán para siempre en la memoria
+              de quienes nos elijen. Evolucionamos en nuestras propuestas y servicios, siempre desde un espacio privilegiado tanto para reuniones sociales
+            como corporativas.
+            </p>
+            <h3>Forma de trabajo</h3>
+            <p>
+              MC Events aman su trabajo, por ello planifican cada detalle de su casamiento con pasión, conocimiento y criterio, para garantizar un resultado espléndido. Trabajan de manera integral, abarcando hasta el más mínimo detalle para que todo resulte a su gusto.
+            </p>
+            <h3>Viví tu experiencia</h3>
+            <p>
+              ¿Cuál es nuestro mayor orgullo? Sabernos elegidos una y otra vez. Ver a nuestros clientes felices, leerlos y entender que hicimos posible aquel momento inolvidable que durará para siempre.
+            </p>
+          </div>
+        </section>
+          
+        <section id="servicios" class="container">
+                <h1>Servicios</h1> 
+                <p>
+                  Es un servicio ideal para quienes recién están comenzando con la organización de su evento. Partiendo de una reunión personal, vemos el estilo que imaginan para su fiesta, y desde ese momento comenzamos un relevamiento exhaustivo de todos los servicios necesarios para llevarla a cabo. Tendran en en tiempo record el panorama general de lo que será su Fiesta, optimizando tiempos y garantizando un estándar de excelencia en todos los rubros del evento. Asesoramiento permanente, reuniones periodicas, comunicación fluida, para que nada quede librado al azar. Ademas asumimos la dirección general, planificación, asesoramiento, coordinación y supervisión del evento hasta que se retira el ultimo invitado.
                 </p>
-    
-                <button
-                        id = "btnPpl"
-                    >
-                        Click 
-                    </button>
+                <hr style="color: black">
+                <div class="card-group" id="servicios">
+                  <div class="card">
+                    <img src="./assets/img/torta1.gif" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <h5 class="card-title">Tortas</h5>
+                      <p class="card-text">¿Torta clásica o moderna? Sea cuál sea la elección encontrá todas las tendencias y propuestas más originales.
+                        .</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/img/vestido1.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <h5 class="card-title">Vestidos</h5>
+                      <p class="card-text">Tu vestido de novia es el más bonito y especial que te pondrás en tu vida. Buscá en nuestro catálogo, y seguro que encontrás ese diseño único que te hace brillar con luz propia. Tenemos más de 7.000 vestidos de más de 60 diseñadores, podrás filtrar por diseñador, corte, temporada y/o escote.</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/img/catering1.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <h5 class="card-title">Catering</h5>
+                      <p class="card-text">Formal, Finger Food, Cocktail, Asados, Pizza Party, Etnicos, Veganos, etc.</p>
+                    </div>
+                  </div>
                 </div>
-    
-            
+        </section>
+
+        <section id="servicios" class="container">
+          <!--<h1>Servicios</h1> --> 
+          <!--<hr style="color: black"> -->
+          <div class="card-group" id="servicios"> 
+            <div class="card">
+              <img src="./assets/img/ambientacion1.jpg" class="card-img-top" alt="..." >
+              <div class="card-body">
+                <h5 class="card-title">Ambientación, decoración y escenografía</h5>
+                <p class="card-text">¿Torta clásica o moderna? Sea cuál sea la elección encontrá todas las tendencias y propuestas más originales.
+                  .</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/img/sonido.jpg" class="card-img-top" alt="..." >
+              <div class="card-body">
+                <h5 class="card-title">Música y Sonido</h5>
+                <p class="card-text">Disc Jockeys, iluminación, equipamiento técnico</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/img/invitaciones-de-boda-hechas-a-mano-Project-Party-Escuela-11.jpg" class="card-img-top" alt="..." >
+              <div class="card-body">
+                <h5 class="card-title">Invitaciones</h5>
+                <p class="card-text">Diseño d einvitaciones y todas la spiezas gráficas de la fiesta.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+         
             <section id="Perfil">
               <div class="col-md-6 col-lg-3 text-center team mb-5">
                 <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%">
                   <img class="img-fluid w-100" src="./assets/marcotronchetti.jpg" alt="" width="200">
-                </div>
-                <h4>Marco Tronchetti Provera</h4>
-                <i>CEO de Pirelli</i>
-              </div>
+              
             </section>
-    
-            <section id="Formulario"
-            >
-                <div>
-                  <h1>Formulario</h1>
-                  <form action="index.html" method="post">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                    <br>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-                    <br>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <br>
-                    <label for="telefono">Telefono</label>
-                    <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
-                    <br>Mensaje<br>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
-                    <br>
-                    <input type="submit" id="mensaje" placeholder="Ingrese su mensaje" value="Enviar">
-                  </form>
-                </div>
-              </section>
+
+          <section> 
+            <div id="formulario" class="container">
+              <h1>Formulario</h1>
+              <h5>Para consultas y comentarios completa el siguiente formulario y nos pondremos en contacto a la brevedad.</h5>
+              <hr style="color: black">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre y apellido">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Email</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su email">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su teléfono">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Mensaje</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su mensaje">
+              </div>
+                <input type="submit" value="Enviar" />
+                
+                </form>
+
+              
+            </div>
+          </section>
           
             </body>
           
               <footer>
-                  <h2>Contact Info</h2>
-                  <h5>Mail: martina29carranza@gmail.com</h5>
-                  <h5>Phone: +5492804678679</h5>
-                  <h5>Seguinos en instagram:</h5>
-                  <a href="https://instagram.com/wildlyyoursweddings?igshid=YmMyMTA2M2Y"=>
-                    <img src="/assets/img/logo insta.webp" alt="logo instagram" width="50">
+                <div  id="contacto">
+                  <h1>Información de contacto</h1>
+                  <p>Mail: martina29carranza@gmail.com</p>
+                  <p>Phone: +5492804678679</p>
+                  <p> Dirección: Colectora Panamericana Km 53. Pilar, Buenos Aires, Argentina. (GPS: S34.44817 W58.90097)</p>
+                  <p>Seguinos en nuestras redes:</p>
+                  <a href="https://instagram.com/wildlyyoursweddings?igshid=YmMyMTA2M2Y">
+                    <img src= "./assets/img/7b3cdf07c1201ffea234e02e6a67c81e.jpg" alt="logo_instagram" width="50">
+                  </a>
+                  <a href="https://www.facebook.com/groups/830047230512014">
+                    <img src="./assets/img/ea227be2a35487534d272a75ef9779c3.jpg" alt="logo_facebook" width="50">
+                  </a>
+                  <a href="https://www.google.com.ar/maps/search/Colectora+Panamericana+Km+53.+Pilar,+Buenos+Aires,+Argentina.+(GPS:+S34.44817+W58.90097)/@-34.4769387,-58.8375709,11z/data=!3m1!4b1">
+                    <img src="./assets/img/d15d528c3f0db8a44131eb6c93b63c81.jpg" alt="logo_mapa" width="50">
                   </a>
               </footer>
+            </body>
           
             
-          </html>
+          
               
       
       
           
-        </body>
+        
       
-      </html>
+</html>
+
