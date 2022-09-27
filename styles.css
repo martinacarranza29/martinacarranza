@@ -1,86 +1,136 @@
-/**{
-   text-decoration: none;
-   color: black;
-}*/
-
 body{
-    margin: 0px;
-    background-color: white; /*cambia el color de toda la página*/
-    background-image: image();
-    margin-left: 20%;
-    margin-right: 20%;
-    /*border: 2px dotted black;*/ /*le da un borde a la pagina, los 2px le da el grosor o agranda el borde, si le pongo 0 se lo saca*/
-    padding: 10px 10px 10px 10px; /*espacio que hay entre el borde y el contenido*/
-    font-family: Georgia, 'Times New Roman', Times, serif
- }
+   background-color: white; 
+   background-image: image();
+   padding: 10px 10px 10px 10px; 
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+ h1{
+   font-family: 'IBM Plex Serif', serif;
+   color:rgb(28, 65, 34)
+}
+
+h3{
+   color: black;
+   font-family: 'Inter Tight', sans-serif
+}
+
+h2{
+   color: rgb(28, 51, 31);
+   font-family: 'Inter Tight', sans-serif
+}
+
+a{
+   font-family: 'Inter Tight', sans-serif;
+   color: black
+}
+
+h5{
+   color:black;
+   font-family: 'Inter Tight', sans-serif
+}
+
+p{
+   font-family: 'Inter Tight', sans-serif;
+   color: black
+}
+ 
 #quienes_somos{
    text-decoration: none;
-   color: black;
+   color: rgb(0, 0, 0);
+   font-family: 'Abril Fatface', cursive;
+   text-decoration-color: green
 }
 
-div{
-    padding: 20px;
-}
+div{padding: 20px;}
 
-#main{
-    background-color:  white
-}
+#main{background-color:  white}
 
-#Formulario{
-   background-color:  white
-}
+#Formulario{background-color:  white}
 
  nav{
-    background-color:rgb(235, 213, 232);
-    display: flex; /*hizo que los puntitos se vayan al costado*/
-    flex-direction: row;
-    height: 130px;
-    text-decoration: none;
-
- }
-/* como en index.html hay solo un nav, no le tengo que poner ninguna referencia */
-/* mediante flex transformamos la botonera, estaba abajo de la imagen y ahora al costado */
-/*flex te lo transforma hacia al costado, llenar espacios*/
+   background-color: rgb(230, 243, 230);
+   display: flex; 
+   flex-direction: row;
+   height: 100px;
+   text-decoration: none;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
 
  nav ul{
-    display: flex /*esto le saca el punto a inicio, sobre nos y contacto*/
- }
+   display: flex; 
+      max-height: 70px
+}
 
  nav li{
-    margin-left: 20px;
-    list-style: none; /*para sacar el punto que tenia uso esto*/
- }
+   margin-left: 20px;
+   list-style: none
+}
 
  nav a {
-    text-decoration: none;      /*para sacar las lineas abajo de inicio, sobrenos y contacto*/
-    color: black             /*para ponerle color a los links*/
-    
- }
+   text-decoration: none;      
+   color: black
+}
 
  nav a:hover{
    color: rgb(248, 248, 248);
-   background-color: rgb(236, 198, 223)
+   background-color: rgb(248, 248, 248)
 }
 
-
  nav img{
-    display: flex;
-    max-height: 130px;   /*para achicar el ancho del logo*/
-    width: auto;            
- }
-/* esto es para que la imagen tenga un tamaño de 50vw, que es el 50% del ancho de la pantalla */
-/* hay que agregarle display flex pq esta adentro del nav */
+   display: flex;
+   max-height: 200px;   
+   width: auto
+}
 
  .menuButton{
-    display: flex;
-    align-items: center;
-    /*background-color: rgb(223, 170, 183);  si quiero que la cajita de inicio y eso este en rosa*/
-    justify-content: flex-end;
-    width: 100%; /*agranda el tamaño de la caja superior añ 100%*/
-    padding: 20px
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   width: 100%; 
+   padding: 20px
  }
+            
 
-nav a:hover{color: rgb(161, 55, 55)} /*para que cuando toco incio, sobrenos aparezca en marron*/
+footer {
+   background-color:rgb(230, 243, 230);
+   justify-content: space-evenly;
+   padding: 15px;
+   border-top-style: solid;
+   border-top-width: 1px;
+   border-top-color: black
+}
+
+footer li{list-style: square}
+
+footer a{
+   text-decoration: none;
+   color: black
+}
+
+footer a:hover{color: rgba(9, 204, 51, 0.521)}
+
+footer div{margin: 10px}
+
+#social div {display: flex}
+
+#presentacion2{
+   text-align: center;
+   background-color: white
+}
+
+#contenedor {
+   display: flex;
+   lex-direction: row;
+   flex-wrap: wrap
+}
+
+ #principal {width: 50%}
+ 
+#sidebar {width: 50%}
+
+ #boton {background-color: black}
+
 
 
 
